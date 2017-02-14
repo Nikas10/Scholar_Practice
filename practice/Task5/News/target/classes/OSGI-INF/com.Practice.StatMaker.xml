@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.1.0">
+    <scr:component immediate="true" name="StatMaker" activate="activate" deactivate="deactivate">
+        <implementation class="com.Practice.StatMaker"/>
+        <service servicefactory="false">
+            <provide interface="com.Practice.StatMaker"/>
+        </service>
+        <property name="osgi.command.scope" value="news"/>
+        <property name="osgi.command.function" value="stats"/>
+        <property name="service.pid" value="StatMaker"/>
+        <reference name="implList" interface="com.Practice.service.InfoService" cardinality="1..n" policy="dynamic" bind="bind" unbind="unbind"/>
+    </scr:component>
+</components>

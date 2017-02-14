@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><components xmlns:scr="http://www.osgi.org/xmlns/scr/v1.0.0">
+    <scr:component name="com.Practice.service.InfoServiceLenta">
+        <implementation class="com.Practice.service.impl.LentaServiceImpl"/>
+        <service servicefactory="false">
+            <provide interface="com.Practice.service.InfoService"/>
+        </service>
+        <property name="service.pid" value="com.Practice.service.InfoServiceLenta"/>
+    </scr:component>
+</components>

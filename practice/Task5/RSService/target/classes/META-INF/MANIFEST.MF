@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1487087921114
+Build-Jdk: 1.8.0_112
+Built-By: Nikas
+Bundle-ManifestVersion: 2
+Bundle-Name: RSService
+Bundle-SymbolicName: com.Practice.RSService
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Import-Package: com.Practice.service;version="[1.0,2)",javax.xml.parsers
+ ,org.w3c.dom,org.xml.sax
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.6))"
+Service-Component: OSGI-INF/com.Practice.service.impl.AifServiceImpl.xml
+Tool: Bnd-3.2.0.201605172007

@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1487087650757
+Build-Jdk: 1.8.0_112
+Built-By: Nikas
+Bundle-ManifestVersion: 2
+Bundle-Name: HelloDSConsumer
+Bundle-SymbolicName: com.Practice.HelloByDSConsumer
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.Practice;version="1.0.0";uses:="com.Practice.service
+ "
+Import-Package: com.Practice.service;version="[1.0,2)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.5))"
+Service-Component: OSGI-INF/com.Practice.App.xml
+Tool: Bnd-3.2.0.201605172007

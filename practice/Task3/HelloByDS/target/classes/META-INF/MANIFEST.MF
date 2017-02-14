@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1487087526373
+Build-Jdk: 1.8.0_112
+Built-By: Nikas
+Bundle-ManifestVersion: 2
+Bundle-Name: HelloByDS
+Bundle-SymbolicName: com.Practice.HelloByDS
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: com.Practice.service;version="1.0.0"
+Import-Package: com.Practice.service;version="[1.0,2)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.5))"
+Service-Component: OSGI-INF/com.Practice.service.impl.HelloServiceImpl.x
+ ml
+Tool: Bnd-3.2.0.201605172007

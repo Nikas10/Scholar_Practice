@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1487087887681
+Build-Jdk: 1.8.0_112
+Built-By: Nikas
+Bundle-ManifestVersion: 2
+Bundle-Name: LentaAPI
+Bundle-SymbolicName: com.Practice.LentaAPI
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Import-Package: com.Practice.service;version="[1.0,2)",org.json;version=
+ "[20160810.0,20160811)"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.5))"
+Service-Component: OSGI-INF/com.Practice.service.impl.LentaServiceImpl.x
+ ml
+Tool: Bnd-3.2.0.201605172007
